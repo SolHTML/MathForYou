@@ -1,39 +1,37 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
     font-family: sans-serif;
 }
 
 .banner {
-    width: 100vw;
-    height: 99.95vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(AboutUs.jpg);
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(AboutUs.jpg);
     background-size: cover; 
     background-position: center;
 }
 
 /* Style the navbar */
 .navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+    width: 100%;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; /* Added position relative */
+    background-color: #127230;
+    height: 90px; /* Adjusted height */
 }
-
-
 
 /* Float the link section to the right */
 .navbar ul {
     display: flex;
     align-items: center;
-    margin-left: 60%;
 }
 
 .navbar ul li {
-    font-size: xx-large;
+    font-size: 20px;
     list-style: none;
     margin: 0 20px;
     position: relative;
@@ -51,17 +49,16 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #127230;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -10px;
-    transition: width 0.5s;
+    transition: width 0.3s ease;
 }
 
 .navbar ul li:hover::after {
     width: 100%;
 }
-
 
 .heading {
     text-align: center;
@@ -70,55 +67,35 @@
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-.websitesp{
+.websitesp {
     text-align: center;
     color: #0a411b;
     font-size: 50px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 /* Style the header with a grey background */
 .header {
     overflow: hidden;
-    background-color: #0a411b;
-    display: flex;
-    align-items: center;
-}
-
-/* Style the header links */
-/* Style the header with a grey background */
-.header {
-    overflow: hidden;
-    background-image: linear-gradient(to right, #127230, #0a411b); /* Gradient background */
+    background-image: linear-gradient(to right, #127230, #0a411b);
     display: flex;
     align-items: center;
     height: 125px; /* Set the height of the header */
+    padding: 0 20px; /* Add padding for spacing */
 }
 
 /* Style the logo image */
 .header img.logo {
-    height: 75%; /* Set the height of the image to 100% of the parent container (the header) */
-    width: auto; /* Allow the width to adjust proportionally */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin-left: 75px; /* Add margin for spacing */
+    height: 75%;
+    width: auto;
+    display: block;
+    margin-left: 75px;
 }
-
-/* Other styles remain the same */
-
-
-
 
 /* Change the background color on mouse-over */
 .header a:hover {
     background-color: #0a411b;
-
 }
 
 /* Style the active/current link */
@@ -133,68 +110,60 @@
 }
 
 /* Add media queries for responsiveness */
-@media screen and (max-width: 500px) {
-    .header {
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+    .navbar ul li {
+        font-size: 16px; /* Adjusted font size */
     }
 
-    .header-right {
-        margin-left: 0;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
+    .heading {
+        font-size: 36px; /* Adjusted font size */
     }
 
-    .header a {
-        display: block;
-        text-align: center;
+    .websitesp {
+        font-size: 36px; /* Adjusted font size */
     }
 }
 
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px; /* Adjusted padding */
+        height: 70px; /* Adjusted height */
+    }
 
+    .navbar ul li {
+        font-size: 14px; /* Adjusted font size */
+        margin: 0 10px; /* Adjusted margin */
+    }
+
+    .heading {
+        font-size: 24px; /* Adjusted font size */
+    }
+
+    .websitesp {
+        font-size: 24px; /* Adjusted font size */
+    }
+
+    .header img.logo {
+        margin-left: 0; /* Center align logo on small screens */
+    }
+}
+
+/* Style for IDs */
 #heading1 {
     text-align: center;
     color: white;
     margin-top: 35px;
-    font-size: 120px; /* Corrected font size property */
+    font-size: 120px; /* Adjusted font size */
 }
 
-#boring1 {
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    font-size: 30px; /* Corrected font size property */ 
-}
-#boring2 {
-    text-align: center;
-    color: white;
-    margin-top: 5px;
-    font-size: 30px; /* Corrected font size property */ 
-}
-
-#boring3 {
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    font-size: 30px; /* Corrected font size property */ 
-}
-#boring4 {
-    text-align: center;
-    color: white;
-    margin-top: 5px;
-    font-size: 30px; /* Corrected font size property */ 
-}
-
-#boring5 {
-    text-align: center;
-    color: white;
-    margin-top: 5px;
-    font-size: 30px; /* Corrected font size property */ 
-}
+#boring1,
+#boring2,
+#boring3,
+#boring4,
+#boring5,
 #boring6 {
     text-align: center;
     color: white;
-    margin-top: 5px;
-    font-size: 30px; /* Corrected font size property */ 
+    margin-top: 10px;
+    font-size: 30px; /* Adjusted font size */ 
 }
-
