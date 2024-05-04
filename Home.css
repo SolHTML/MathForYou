@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #127230; /* Adjusted background color */
-    height: 120px; /* Doubled the height */
+    height: 90px; /* Doubled the height */
 }
 
 /* Float the link section to the right */
@@ -31,9 +31,9 @@
 }
 
 .navbar ul li {
-    font-size: 16px; /* Adjusted font size */
+    font-size: 20px; /* Adjusted font size */
     list-style: none;
-    margin: 0 10px; /* Adjusted margin */
+    margin: 0 15px; /* Adjusted margin */
 }
 
 /* Style the navbar links */
