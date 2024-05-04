@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100vw;
+    height: 99.95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(banner.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+/* Style the navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Added position relative */
+}
+
+
+
+/* Float the link section to the right */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-left: 60%;
+}
+
+.navbar ul li {
+    font-size: xx-large;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+/* Style the navbar links */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Style the link underline */
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #127230;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+.heading {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    height: 50px; /* Added height to ensure button is clickable */
+    padding: 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #127230;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button a {
+    display: block;
+    height: 100%;
+    line-height: 45px; /* Adjust line-height to vertically center the text */
+}
+
+button::after {
+    content: '';
+    background: #127230;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+button:hover::after {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.link_underline {
+    text-decoration: none;
+    font-size: 30px;
+    color: #0a411b;
+}
+
+
+
+.websitesp{
+    text-align: center;
+    color: #0a411b;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Style the header with a grey background */
+.header {
+    overflow: hidden;
+    background-color: #0a411b;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the header links */
+/* Style the header with a grey background */
+.header {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #127230, #0a411b); /* Gradient background */
+    display: flex;
+    align-items: center;
+    height: 125px; /* Set the height of the header */
+}
+
+/* Style the logo image */
+.header img.logo {
+    height: 75%; /* Set the height of the image to 100% of the parent container (the header) */
+    width: auto; /* Allow the width to adjust proportionally */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-left: 75px; /* Add margin for spacing */
+}
+
+/* Other styles remain the same */
+
+
+
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #0a411b;
+
+}
+
+/* Style the active/current link */
+.header a.active {
+    background-color: dodgerblue;
+    color: #0a411b;
+}
+
+/* Float the link section to the right */
+.header-right {
+    margin-left: auto;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-right {
+        margin-left: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header a {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+.games {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.gamelogo1 {
+    height: 25vh; /* Set the height of the image to 100% of the parent container (the header) */
+    width: 15vw; /* Allow the width to adjust proportionally */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-left: 80px;
+    position: absolute; top: 230px;
+    
+}
+
+.gamelogo2 {
+    height: 25vh; /* Set the height of the image to 100% of the parent container (the header) */
+    width: 15vw; /* Allow the width to adjust proportionally */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-left: 380px;
+    position: absolute; top: 230px;
+    
+}
+
+.games h1 {
+    font-size: 70px;
+    margin-bottom: 550px;
+}
+
+.games p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}

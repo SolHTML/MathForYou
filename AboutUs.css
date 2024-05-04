@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100vw;
+    height: 99.95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(AboutUs.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+/* Style the navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Added position relative */
+}
+
+
+
+/* Float the link section to the right */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-left: 60%;
+}
+
+.navbar ul li {
+    font-size: xx-large;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+/* Style the navbar links */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Style the link underline */
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #127230;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+.heading {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.websitesp{
+    text-align: center;
+    color: #0a411b;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Style the header with a grey background */
+.header {
+    overflow: hidden;
+    background-color: #0a411b;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the header links */
+/* Style the header with a grey background */
+.header {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #127230, #0a411b); /* Gradient background */
+    display: flex;
+    align-items: center;
+    height: 125px; /* Set the height of the header */
+}
+
+/* Style the logo image */
+.header img.logo {
+    height: 75%; /* Set the height of the image to 100% of the parent container (the header) */
+    width: auto; /* Allow the width to adjust proportionally */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-left: 75px; /* Add margin for spacing */
+}
+
+/* Other styles remain the same */
+
+
+
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #0a411b;
+
+}
+
+/* Style the active/current link */
+.header a.active {
+    background-color: dodgerblue;
+    color: #0a411b;
+}
+
+/* Float the link section to the right */
+.header-right {
+    margin-left: auto;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-right {
+        margin-left: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header a {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+#heading1 {
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+    font-size: 120px; /* Corrected font size property */
+}
+
+#boring1 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 30px; /* Corrected font size property */ 
+}
+#boring2 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 30px; /* Corrected font size property */ 
+}
+
+#boring3 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 30px; /* Corrected font size property */ 
+}
+#boring4 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 30px; /* Corrected font size property */ 
+}
+
+#boring5 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 30px; /* Corrected font size property */ 
+}
+#boring6 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 30px; /* Corrected font size property */ 
+}
+
