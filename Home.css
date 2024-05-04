@@ -21,6 +21,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #127230; /* Adjusted background color */
+    height: 120px; /* Doubled the height */
 }
 
 /* Float the link section to the right */
@@ -97,6 +98,12 @@ button {
 
 button:hover {
     background-color: #127230; /* Adjusted color */
+}
+
+.link_underline {
+    text-decoration: none;
+    color: #0a411b;
+    font-size: xx-large;
 }
 
 .websitesp {
