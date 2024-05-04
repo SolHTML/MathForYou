@@ -16,7 +16,7 @@
 .navbar {
     width: 85%;
     margin: auto;
-    padding: 35px 0;
+    padding: 20px 0; /* Adjusted padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +31,7 @@
 }
 
 .navbar ul li {
-    font-size: xx-large;
+    font-size: large; /* Adjusted font size */
     list-style: none;
     margin: 0 20px;
     position: relative;
@@ -148,8 +148,8 @@ button:hover {
     background-image: linear-gradient(to right, #127230, #0a411b); /* Gradient background */
     display: flex;
     align-items: center;
-    height: 125px; /* Set the height of the header */
-    padding: 0 20px; /* Add padding for spacing */
+    height: 100px; /* Adjusted height */
+    padding: 10px 20px; /* Adjusted padding */
 }
 
 /* Style the logo image */
