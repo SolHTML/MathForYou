@@ -27,7 +27,6 @@
 .navbar ul {
     display: flex;
     align-items: center;
-    margin-left: 60%;
 }
 
 .navbar ul li {
@@ -148,16 +147,16 @@ button:hover {
     background-image: linear-gradient(to right, #127230, #0a411b); /* Gradient background */
     display: flex;
     align-items: center;
-    height: 100px; /* Adjusted height */
+    height: 80px; /* Adjusted height */
     padding: 10px 20px; /* Adjusted padding */
 }
 
 /* Style the logo image */
 .header img.logo {
-    height: 75%; /* Set the height of the image to 100% of the parent container (the header) */
+    height: 60px; /* Adjusted height */
     width: auto; /* Allow the width to adjust proportionally */
     display: block; /* Ensure the image is displayed as a block element */
-    margin-left: 75px; /* Add margin for spacing */
+    margin-right: 10px; /* Adjusted margin */
 }
 
 /* Change the background color on mouse-over */
@@ -185,46 +184,6 @@ button:hover {
 
     /* Adjust the header layout for mobile */
     .header {
-        height: 50px; /* Set a fixed height for the minimized header */
-        padding: 10px; /* Add padding for spacing */
-    }
-
-    /* Adjust the navbar links for mobile */
-    .navbar ul {
-        justify-content: center; /* Center align the links */
-        margin-left: 0; /* Remove the margin */
-    }
-
-    /* Adjust individual navbar links for mobile */
-    .navbar ul li {
-        margin: 5px; /* Reduce the margin */
-    }
-
-    /* Adjust game section layout for mobile */
-    .games {
-        padding-top: 100px; /* Add some space from the top */
-    }
-
-    /* Adjust game logos for mobile */
-    .gamelogo1,
-    .gamelogo2 {
-        width: 60vw; /* Adjust width for mobile */
-        margin-left: auto; /* Center align the logos */
-        margin-right: auto;
-        top: 50px; /* Adjust top position */
-        left: 0;
-        right: 0;
-    }
-
-    /* Adjust game heading for mobile */
-    .games h1 {
-        font-size: 40px; /* Decrease font size */
-        margin-bottom: 50px; /* Adjust margin */
-    }
-
-    /* Adjust game paragraph for mobile */
-    .games p {
-        font-size: 16px; /* Decrease font size */
-        line-height: 20px; /* Decrease line height */
+        height: 60px; /* Set a fixed height for the minimized header */
     }
 }
