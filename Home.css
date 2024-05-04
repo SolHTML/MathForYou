@@ -149,6 +149,7 @@ button:hover {
     display: flex;
     align-items: center;
     height: 125px; /* Set the height of the header */
+    padding: 0 20px; /* Add padding for spacing */
 }
 
 /* Style the logo image */
@@ -176,32 +177,32 @@ button:hover {
 }
 
 /* Add media queries for responsiveness */
-@media screen and (max-width: 500px) {
-    /* Adjust the header layout for mobile */
-    .header {
-        flex-direction: column;
-        height: auto; /* Remove fixed height */
+@media screen and (max-width: 428px) {
+    /* Hide the logo */
+    .header img.logo {
+        display: none;
     }
 
-    /* Center align the logo for mobile */
-    .header img.logo {
-        margin: 20px auto; /* Center align the logo */
+    /* Adjust the header layout for mobile */
+    .header {
+        height: 50px; /* Set a fixed height for the minimized header */
+        padding: 10px; /* Add padding for spacing */
     }
 
     /* Adjust the navbar links for mobile */
     .navbar ul {
-        margin-left: 0; /* Remove the margin */
         justify-content: center; /* Center align the links */
+        margin-left: 0; /* Remove the margin */
     }
 
     /* Adjust individual navbar links for mobile */
     .navbar ul li {
-        margin: 10px; /* Reduce the margin */
+        margin: 5px; /* Reduce the margin */
     }
 
     /* Adjust game section layout for mobile */
     .games {
-        padding-top: 150px; /* Add some space from the top */
+        padding-top: 100px; /* Add some space from the top */
     }
 
     /* Adjust game logos for mobile */
@@ -210,7 +211,7 @@ button:hover {
         width: 60vw; /* Adjust width for mobile */
         margin-left: auto; /* Center align the logos */
         margin-right: auto;
-        top: 100px; /* Adjust top position */
+        top: 50px; /* Adjust top position */
         left: 0;
         right: 0;
     }
@@ -218,7 +219,7 @@ button:hover {
     /* Adjust game heading for mobile */
     .games h1 {
         font-size: 40px; /* Decrease font size */
-        margin-bottom: 100px; /* Adjust margin */
+        margin-bottom: 50px; /* Adjust margin */
     }
 
     /* Adjust game paragraph for mobile */
