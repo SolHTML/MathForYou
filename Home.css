@@ -23,8 +23,6 @@
     position: relative; /* Added position relative */
 }
 
-
-
 /* Float the link section to the right */
 .navbar ul {
     display: flex;
@@ -62,15 +60,12 @@
     width: 100%;
 }
 
-
 .heading {
     text-align: center;
     color: white;
     font-size: 50px;
     font-weight: bold;
 }
-
-
 
 .content {
     width: 100%;
@@ -140,24 +135,13 @@ button:hover {
     color: #0a411b;
 }
 
-
-
-.websitesp{
+.websitesp {
     text-align: center;
     color: #0a411b;
     font-size: 50px;
     font-weight: bold;
 }
 
-/* Style the header with a grey background */
-.header {
-    overflow: hidden;
-    background-color: #0a411b;
-    display: flex;
-    align-items: center;
-}
-
-/* Style the header links */
 /* Style the header with a grey background */
 .header {
     overflow: hidden;
@@ -175,15 +159,9 @@ button:hover {
     margin-left: 75px; /* Add margin for spacing */
 }
 
-/* Other styles remain the same */
-
-
-
-
 /* Change the background color on mouse-over */
 .header a:hover {
     background-color: #0a411b;
-
 }
 
 /* Style the active/current link */
@@ -199,58 +177,53 @@ button:hover {
 
 /* Add media queries for responsiveness */
 @media screen and (max-width: 500px) {
+    /* Adjust the header layout for mobile */
     .header {
         flex-direction: column;
+        height: auto; /* Remove fixed height */
     }
 
-    .header-right {
-        margin-left: 0;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
+    /* Center align the logo for mobile */
+    .header img.logo {
+        margin: 20px auto; /* Center align the logo */
     }
 
-    .header a {
-        display: block;
-        text-align: center;
+    /* Adjust the navbar links for mobile */
+    .navbar ul {
+        margin-left: 0; /* Remove the margin */
+        justify-content: center; /* Center align the links */
     }
-}
 
+    /* Adjust individual navbar links for mobile */
+    .navbar ul li {
+        margin: 10px; /* Reduce the margin */
+    }
 
-.games {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
-}
+    /* Adjust game section layout for mobile */
+    .games {
+        padding-top: 150px; /* Add some space from the top */
+    }
 
-.gamelogo1 {
-    height: 25vh; /* Set the height of the image to 100% of the parent container (the header) */
-    width: 15vw; /* Allow the width to adjust proportionally */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin-left: 80px;
-    position: absolute; top: 230px;
-    
-}
+    /* Adjust game logos for mobile */
+    .gamelogo1,
+    .gamelogo2 {
+        width: 60vw; /* Adjust width for mobile */
+        margin-left: auto; /* Center align the logos */
+        margin-right: auto;
+        top: 100px; /* Adjust top position */
+        left: 0;
+        right: 0;
+    }
 
-.gamelogo2 {
-    height: 25vh; /* Set the height of the image to 100% of the parent container (the header) */
-    width: 15vw; /* Allow the width to adjust proportionally */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin-left: 380px;
-    position: absolute; top: 230px;
-    
-}
+    /* Adjust game heading for mobile */
+    .games h1 {
+        font-size: 40px; /* Decrease font size */
+        margin-bottom: 100px; /* Adjust margin */
+    }
 
-.games h1 {
-    font-size: 70px;
-    margin-bottom: 550px;
-}
-
-.games p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
+    /* Adjust game paragraph for mobile */
+    .games p {
+        font-size: 16px; /* Decrease font size */
+        line-height: 20px; /* Decrease line height */
+    }
 }
