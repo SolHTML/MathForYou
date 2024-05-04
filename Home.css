@@ -1,26 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
     font-family: sans-serif;
 }
 
 .banner {
-    width: 100vw;
-    height: 99.95vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(banner.jpg);
+    width: 100%;
+    height: 100vh; /* Adjusted height */
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(banner.jpg);
     background-size: cover; 
     background-position: center;
 }
 
 /* Style the navbar */
 .navbar {
-    width: 85%;
-    margin: auto;
-    padding: 20px 0; /* Adjusted padding */
+    width: 100%;
+    padding: 10px 20px; /* Adjusted padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; /* Added position relative */
+    background-color: #127230; /* Adjusted background color */
 }
 
 /* Float the link section to the right */
@@ -30,10 +30,9 @@
 }
 
 .navbar ul li {
-    font-size: large; /* Adjusted font size */
+    font-size: 16px; /* Adjusted font size */
     list-style: none;
-    margin: 0 20px;
-    position: relative;
+    margin: 0 10px; /* Adjusted margin */
 }
 
 /* Style the navbar links */
@@ -48,11 +47,9 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #127230;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: width 0.5s;
+    background: #fff; /* Adjusted color */
+    display: block;
+    transition: width 0.3s ease;
 }
 
 .navbar ul li:hover::after {
@@ -62,128 +59,91 @@
 .heading {
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 36px; /* Adjusted font size */
     font-weight: bold;
+    margin-top: 20px; /* Adjusted margin */
 }
 
 .content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
     color: white;
+    padding: 20px; /* Adjusted padding */
 }
 
 .content h1 {
-    font-size: 70px;
-    margin-top: 80px;
+    font-size: 48px; /* Adjusted font size */
+    margin-bottom: 20px; /* Adjusted margin */
 }
 
 .content p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px; /* Adjusted margin */
 }
 
 button {
     width: 200px;
-    height: 50px; /* Added height to ensure button is clickable */
-    padding: 0;
-    text-align: center;
-    margin: 20px 10px;
+    height: 50px;
+    margin: 20px auto; /* Adjusted margin */
+    display: block;
     border-radius: 25px;
     font-weight: bold;
     border: 3px solid #127230;
     background: transparent;
     color: white;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-button a {
-    display: block;
-    height: 100%;
-    line-height: 45px; /* Adjust line-height to vertically center the text */
-}
-
-button::after {
-    content: '';
-    background: #127230;
-    height: 100%;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: width 0.5s;
-}
-
-button:hover::after {
-    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    border: none;
-}
-
-.link_underline {
-    text-decoration: none;
-    font-size: 30px;
-    color: #0a411b;
+    background-color: #127230; /* Adjusted color */
 }
 
 .websitesp {
     text-align: center;
     color: #0a411b;
-    font-size: 50px;
+    font-size: 36px; /* Adjusted font size */
     font-weight: bold;
-}
-
-/* Style the header with a grey background */
-.header {
-    overflow: hidden;
-    background-image: linear-gradient(to right, #127230, #0a411b); /* Gradient background */
-    display: flex;
-    align-items: center;
-    height: 80px; /* Adjusted height */
-    padding: 10px 20px; /* Adjusted padding */
-}
-
-/* Style the logo image */
-.header img.logo {
-    height: 60px; /* Adjusted height */
-    width: auto; /* Allow the width to adjust proportionally */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin-right: 10px; /* Adjusted margin */
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-    background-color: #0a411b;
-}
-
-/* Style the active/current link */
-.header a.active {
-    background-color: dodgerblue;
-    color: #0a411b;
-}
-
-/* Float the link section to the right */
-.header-right {
-    margin-left: auto;
+    margin-top: 20px; /* Adjusted margin */
 }
 
 /* Add media queries for responsiveness */
-@media screen and (max-width: 428px) {
-    /* Hide the logo */
-    .header img.logo {
-        display: none;
+@media screen and (max-width: 768px) {
+    .navbar ul li {
+        font-size: 14px; /* Adjusted font size */
     }
 
-    /* Adjust the header layout for mobile */
-    .header {
-        height: 60px; /* Set a fixed height for the minimized header */
+    .heading {
+        font-size: 30px; /* Adjusted font size */
+    }
+
+    .content h1 {
+        font-size: 36px; /* Adjusted font size */
+    }
+
+    .content p {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .websitesp {
+        font-size: 30px; /* Adjusted font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 24px; /* Adjusted font size */
+    }
+
+    .content h1 {
+        font-size: 30px; /* Adjusted font size */
+    }
+
+    .content p {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .websitesp {
+        font-size: 24px; /* Adjusted font size */
     }
 }
