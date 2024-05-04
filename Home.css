@@ -33,7 +33,7 @@
 .navbar ul li {
     font-size: 20px; /* Adjusted font size */
     list-style: none;
-    margin: 0 15px; /* Adjusted margin */
+    margin: 0 20px; /* Adjusted margin */
 }
 
 /* Style the navbar links */
@@ -90,7 +90,7 @@ button {
     display: block;
     border-radius: 25px;
     font-weight: bold;
-    border: 3px solid #127230;
+    border: 3px solid #ffffff;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -98,12 +98,12 @@ button {
 }
 
 button:hover {
-    background-color: #127230; /* Adjusted color */
+    background-color: #ffffff; /* Adjusted color */
 }
 
 .link_underline {
     text-decoration: none;
-    color: #0a411b;
+    color: #000000;
     font-size: xx-large;
 }
 
