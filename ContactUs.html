@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathForYou</title>
+    <link rel="stylesheet" href="ContactUs.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+          <ul>
+              <li><a href="index.html">בית</a></li>
+              <li><a href="AboutUs.html">מי אנחנו</a></li>
+              <li><a href="ContactUs.html" target="_blank" rel="noopener">הרשמה</a></li>
+              <li><a href="links.html">דברו איתנו</a></li>   
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+          <input type="hidden" name="access_key" value="3efa0d50-4a1b-4153-b183-f3abab812758">
+
+          <label for="fname">שם</label>
+          <input type="text" id="name" name="name" placeholder="הכניסו את שמכם">
+      
+          <label for="lname">כתובת אימייל</label>
+          <input type="text" id="email" name="email" placeholder="הכניסו את כתובת האימייל שלכם">
+      
+          <label for="lname">מקום מגורים</label>
+          <input type="text" id="address" name="address" placeholder="הכניסו את כתובת המגורים שלכם">
+      
+          <label for="subject">פרטים נוספים</label>
+          <textarea id="subject" name="subject" placeholder="שם רחוב, שעה ועוד" style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+          
+      
+        </form>
+      </div>
+</body>
+</html>
