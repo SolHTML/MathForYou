@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MathForYou</title>
     <link rel="stylesheet" href="ContactUs.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body>
     <div class="header">
@@ -18,7 +19,13 @@
       </div>
     </div>
     <div class="container">
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+          <label for="typeForm">סוג הפניה</label>
+          <select id="typeForm" name="typeForm">
+            <option value="signup">הרשמה</option>
+            <option value="question">שאלה</option>
+          </select>
             
           <input type="hidden" name="access_key" value="3efa0d50-4a1b-4153-b183-f3abab812758">
 
@@ -35,13 +42,12 @@
           <input type="text" id="address" name="address" placeholder="הכניסו את כתובת המגורים שלכם" required>
       
           <label for="additional-detail">פרטים נוספים</label>
-          <input type="text" id="additional-detail" name="additional-detail" placeholder="שם רחוב, שעה ועוד" required>
+          <textarea class="form-textarea" id="additional-detail" name="additional-detail" placeholder="מספר דירה, שעה ועוד" height="200px" required></textarea>
 
-      
           <input type="submit" value="שלח">
-          
-      
+
         </form>
       </div>
+
 </body>
 </html>
