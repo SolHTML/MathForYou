@@ -175,10 +175,15 @@
     font-size: 30px;
 }
 
-.operate {
-    margin-left: 32vw;
-}
+@media screen and (max-width: 768px) {
+    /* Other styles... */
 
-.wherewe {
-    margin-left: 37vw;
+    /* Center images on phones */
+    .operate,
+    .wherewe {
+        margin: 0 auto; /* Set left and right margins to auto to center the images */
+        display: block; /* Ensure the images are block-level elements */
+        max-width: 100%; /* Ensure images don't exceed the width of the viewport */
+        height: auto; /* Maintain image aspect ratio */
+    }
 }
