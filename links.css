@@ -115,6 +115,12 @@
     .websitesp {
         font-size: 30px;
     }
+
+    /* Center images on phones */
+    .operate,
+    .wherewe {
+        margin-left: auto; /* Resetting margin to auto will center the images */
+    }
 }
 
 @media screen and (max-width: 480px) {
