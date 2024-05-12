@@ -9,6 +9,21 @@
     
 </head>
 <body>
+    <script>
+    function isDesktop() {
+        return !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    }
+
+    // Redirect function
+    function redirectToDesktop() {
+        window.location.href = "https://solhtml.github.io/MathForYouPC/"; // Change this to the URL you want to redirect to for desktop users
+    }
+
+    // Check if the user is on a desktop and redirect if so
+    if (isDesktop()) {
+        redirectToDesktop();
+    }
+    </script>
     <div class="banner">
         <div class="header">
               <div class="navbar">
