@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
     font-family: sans-serif;
 }
 
 .banner {
     width: 100%;
-    min-height: 100vh; /* Adjusted height */
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(AboutUs.jpg);
+    height: 100vh; /* Adjusted height */
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(banner.jpg);
     background-size: cover; 
     background-position: center;
 }
@@ -16,12 +16,12 @@
 /* Style the navbar */
 .navbar {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Adjusted padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #127230;
-    height: 90px;
+    background-color: #127230; /* Adjusted background color */
+    height: 90px; /* Doubled the height */
 }
 
 /* Float the link section to the right */
@@ -31,10 +31,9 @@
 }
 
 .navbar ul li {
-    font-size: 20px;
+    font-size: 20px; /* Adjusted font size */
     list-style: none;
-    margin: 0 20px;
-    position: relative;
+    margin: 0 20px; /* Adjusted margin */
 }
 
 /* Style the navbar links */
@@ -49,10 +48,8 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
+    background: #fff; /* Adjusted color */
+    display: block;
     transition: width 0.3s ease;
 }
 
@@ -63,91 +60,102 @@
 .heading {
     text-align: center;
     color: white;
-    font-size: 36px;
+    font-size: 36px; /* Adjusted font size */
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 20px; /* Adjusted margin */
 }
 
 .content {
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 20px; /* Adjusted padding */
     margin-top: 12%;
 }
 
 .content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 48px; /* Adjusted font size */
+    margin-bottom: 20px; /* Adjusted margin */
 }
 
 .content p {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 20px auto; /* Adjusted margin */
+    display: block;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #127230;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #127230; /* Adjusted color */
+}
+
+.link_underline {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: xx-large;
 }
 
 .websitesp {
     text-align: center;
     color: #0a411b;
-    font-size: 36px;
+    font-size: 36px; /* Adjusted font size */
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 20px; /* Adjusted margin */
 }
 
 /* Add media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .navbar ul li {
-        font-size: 14px;
+        font-size: 14px; /* Adjusted font size */
     }
 
     .heading {
-        font-size: 30px;
+        font-size: 30px; /* Adjusted font size */
     }
 
     .content h1 {
-        font-size: 36px;
+        font-size: 36px; /* Adjusted font size */
     }
 
     .content p {
-        font-size: 14px;
+        font-size: 14px; /* Adjusted font size */
     }
 
     .websitesp {
-        font-size: 30px;
+        font-size: 30px; /* Adjusted font size */
     }
 }
 
 @media screen and (max-width: 480px) {
-    .banner {
-        min-height: auto; /* Remove minimum height to fit content */
-    }
-
-    .navbar {
-        padding: 5px 10px;
-        height: 70px;
-    }
-
-    .navbar ul li {
-        font-size: 14px;
-        margin: 0 10px;
-    }
-
     .heading {
-        font-size: 24px;
+        font-size: 24px; /* Adjusted font size */
     }
 
     .content h1 {
-        font-size: 30px;
+        font-size: 30px; /* Adjusted font size */
     }
 
     .content p {
-        font-size: 14px;
+        font-size: 14px; /* Adjusted font size */
     }
 
     .websitesp {
-        font-size: 24px;
+        font-size: 24px; /* Adjusted font size */
     }
 }
+
 
 /* Style for IDs */
 #heading1 {
