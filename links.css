@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
 .banner {
     width: 100%;
-    height: 100vh; /* Adjusted height */
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(banner.jpg);
+    min-height: 100vh; /* Adjusted height */
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(map.jpg);
     background-size: cover; 
     background-position: center;
 }
@@ -16,12 +16,12 @@
 /* Style the navbar */
 .navbar {
     width: 100%;
-    padding: 10px 20px; /* Adjusted padding */
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #127230; /* Adjusted background color */
-    height: 90px; /* Doubled the height */
+    background-color: #127230;
+    height: 90px;
 }
 
 /* Float the link section to the right */
@@ -31,9 +31,10 @@
 }
 
 .navbar ul li {
-    font-size: 20px; /* Adjusted font size */
+    font-size: 20px;
     list-style: none;
-    margin: 0 20px; /* Adjusted margin */
+    margin: 0 20px;
+    position: relative;
 }
 
 /* Style the navbar links */
@@ -48,8 +49,10 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #fff; /* Adjusted color */
-    display: block;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
     transition: width 0.3s ease;
 }
 
@@ -60,102 +63,97 @@
 .heading {
     text-align: center;
     color: white;
-    font-size: 36px; /* Adjusted font size */
+    font-size: 36px;
     font-weight: bold;
-    margin-top: 20px; /* Adjusted margin */
+    margin-top: 20px;
 }
 
 .content {
     text-align: center;
     color: white;
-    padding: 20px; /* Adjusted padding */
+    padding: 20px;
     margin-top: 12%;
 }
 
 .content h1 {
-    font-size: 48px; /* Adjusted font size */
-    margin-bottom: 20px; /* Adjusted margin */
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .content p {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px; /* Adjusted margin */
-}
-
-button {
-    width: 200px;
-    height: 50px;
-    margin: 20px auto; /* Adjusted margin */
-    display: block;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 3px solid #127230;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #127230; /* Adjusted color */
-}
-
-.link_underline {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: xx-large;
+    margin-bottom: 20px;
 }
 
 .websitesp {
     text-align: center;
     color: #0a411b;
-    font-size: 36px; /* Adjusted font size */
+    font-size: 36px;
     font-weight: bold;
-    margin-top: 20px; /* Adjusted margin */
+    margin-top: 20px;
 }
 
 /* Add media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .navbar ul li {
-        font-size: 14px; /* Adjusted font size */
+        font-size: 14px;
     }
 
     .heading {
-        font-size: 30px; /* Adjusted font size */
+        font-size: 30px;
     }
 
     .content h1 {
-        font-size: 36px; /* Adjusted font size */
+        font-size: 36px;
     }
 
     .content p {
-        font-size: 14px; /* Adjusted font size */
+        font-size: 14px;
     }
 
     .websitesp {
-        font-size: 30px; /* Adjusted font size */
+        font-size: 30px;
+    }
+
+    /* Center images on phones */
+    .operate,
+    .wherewe {
+        margin-left: auto; /* Resetting margin to auto will center the images */
     }
 }
 
 @media screen and (max-width: 480px) {
+    .banner {
+        min-height: auto; /* Remove minimum height to fit content */
+    }
+
+    .navbar {
+        padding: 5px 10px;
+        height: 70px;
+    }
+
+    .navbar ul li {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
     .heading {
-        font-size: 24px; /* Adjusted font size */
+        font-size: 24px;
     }
 
     .content h1 {
-        font-size: 30px; /* Adjusted font size */
+        font-size: 30px;
     }
 
     .content p {
-        font-size: 14px; /* Adjusted font size */
+        font-size: 14px;
     }
 
     .websitesp {
-        font-size: 24px; /* Adjusted font size */
+        font-size: 24px;
     }
 }
-
 
 /* Style for IDs */
 #heading1 {
