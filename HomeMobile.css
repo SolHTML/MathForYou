@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100vw;
+    height: 99.95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(background.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+/* Style the minimized header and navbar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #101010, #040404);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 5%;
+}
+
+.navbar ul li {
+    font-size: small;
+    list-style: none;
+    margin: 0 10px;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Style the navbar links */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Style the link underline */
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #002a7d;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20%;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #c9bc09c3;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.link_underline {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: xx-large;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+#one {
+    font-family: sans-serif
+}
+
+#two {
+    background-color: rgb(53, 85, 203);
+    font-family: "Poppins", sans-serif;
+}
+
+#two h1 {
+    color: rgb(226, 226, 226);
+    text-shadow: 1px 1px 4px #000000;
+}
+
+#three h1, #two h1 {
+    font-size: 24px;
+}
+
+#four {
+    height: 99.95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000086;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+#four h1 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom:  15px;  
+    margin-right: 1%;
+}
+
+#four input, #four textarea {
+    background-color: white;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#four textarea {
+    height: 100px;
+}
+
+#four input:focus-within, #four textarea:focus-within {
+    outline: none;
+    border-color: #5bd183;
+    border-width: 3px;
+}
+
+#four button {
+    background-color: #5bd183;
+    border-radius: 20px;
+    border: 3px solid black;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#four button:hover {
+    opacity: 0.8;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 428px) {
+    .header {
+        height: 50px;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .navbar ul li {
+        margin: 5px;
+    }
+}

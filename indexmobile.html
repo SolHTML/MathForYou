@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catnip Studios</title>
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="HomeMobile.css">
     <link rel="icon" type="image/x-icon" href="wizard npc1.png">
+    <script>
+        function isDesktop() {
+            return !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+        }
+
+        // Redirect function
+        function redirectToDesktop() {
+            window.location.href = "index.html"; // Change this to the URL you want to redirect to for desktop users
+        }
+
+        // Check if the user is on a desktop and redirect if so
+        if (isDesktop()) {
+            redirectToDesktop();
+        }
+    </script>
 </head>
 <body>
     <section id="one">
         <div class="banner">
             <div class="header">
-                <img src="logo.png" class="logo">
-                <img src="wizard npc1.png" class="wizard">
                 <div class="navbar">
                     <ul>
                         <li><a href="#one">home</a></li>
@@ -38,7 +51,7 @@
     </section>
 
     <section id="four">
-        <div lang="en" style="margin-right: 50%;">
+        <div class="contact-container">
             <h1>Contact Us!</h1>
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="362388d4-9673-4748-88a2-461899a81529">
@@ -50,32 +63,5 @@
             </form>
         </div>
     </section>
-
-    <script>
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        // Redirect function
-        function redirectToMobile() {
-            window.location.href = "indexmobile.html"; // Replace this with the URL you want to redirect mobile users to
-        }
-
-        // Check if the user is on a mobile device and redirect if so
-        if (isMobile()) {
-            redirectToMobile();
-        }
-
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            const sectionOneHeight = document.querySelector('#one').offsetHeight;
-
-            if (window.scrollY > sectionOneHeight) {
-                header.classList.add('minimized');
-            } else {
-                header.classList.remove('minimized');
-            }
-        });
-    </script>
 </body>
 </html>
